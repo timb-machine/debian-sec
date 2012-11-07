@@ -1,0 +1,133 @@
+Source: debian-sec
+Section: contrib/admin
+Priority: extra
+Maintainer: Tim Brown <timb@nth-dimension.org.uk>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.3
+Homepage: http://www.nth-dimension.org.uk/
+Vcs-Cvs: :pserver:anonymous@cvs.nth-dimension.org.uk:/var/lib/cvsd debian-sec
+Vcs-Browser: http://projects.nth-dimension.org.uk/timeline?px=debian-sec
+
+Package: debian-sec
+Architecture: all
+Depends: ${misc:Depends}, security-client, security-develop, security-emulate, security-encrypt, security-enumerate, security-forensics, security-fuzz, security-host, security-misc, security-server, security-sniff, security-tunnel, security-wardrive
+Recommends: security-client-nonfree, security-host-nonfree, security-server-nonfree
+Description: security packages
+ This package will install the packages for Debian, for security testing
+
+Package: security-client
+Architecture: all
+Depends: ${misc:Depends}, adtool, arping, arp-scan, bind9-host, cadaver, cdpr, curl, isc-dhcp-client, dnsutils, dnswalk, finger, fpdns, ftp-ssl, icmpush, ike-scan, inguma, jxplorer, ldap-utils, lft, lynx, minicom, miniupnpc, mtr, mysql-client, nbtscan, ncftp, netcat6, nfs-common, nikto, nis, ntpdate, openssh-client, openssl, radiusclient1, ratproxy, rdesktop, rsh-client, rwho, s3270, scanssh, scli, siege, skipfish, smbclient, smb-nat, snmp, socat, sqlite3, sqlmap, sqsh, ssmping, tcptraceroute, telnet, tftp, traceroute-nanog, upnp-router-control, w3af, w3m, wapiti, wget, whois, x3270, xnest, xtv
+Description: security protocol specific client packages
+ This package will install the protocol specific client packages for Debian,
+ for security testing
+
+Package: security-client-nonfree
+Architecture: all
+Depends: ${misc:Depends}
+Recommends: burpsuite, oracle-xe-client
+Description: security nonfree protocol specific client packages
+ This package will install the nonfree protocol specific client packages
+ for Debian, for security testing.
+
+Package: security-server
+Architecture: all
+Depends: ${misc:Depends}, apache2, dante-server, dnsmasq, mysql-server, openssh-server, rsh-server, rwhod, samba, tftpd, vsftpd
+Recommends: php5, php5-cli, php-db, phpmyadmin, php-pear
+Description: security protocol specific server packages
+ This package will install the protocol specific server packages for Debian,
+ for security testing
+
+Package: security-server-nonfree
+Architecture: all
+Depends: ${misc:Depends}
+Recommends: oracle-xe
+Description: security nonfree protocol specific server packages
+ This package will install the nonfree protocol specific server packages
+ for Debian, for security testing
+
+Package: security-enumerate
+Architecture: all
+Depends: ${misc:Depends}, dhcp-probe, doscan, netwox, nmap, openvas-client, openvas-scanner, p0f, pnscan, wakeonlan, xprobe
+Description: security host enumeration packages
+ This package will install the host enumeration packages for Debian, for
+ security testing
+
+Package: security-host
+Architecture: all
+Depends: ${misc:Depends}, arpwatch, auditd, bridge-utils, chkrootkit, clamav, debsecan, ebtables, ext3grep, icmpinfo, iptables, lsof, macchanger, ovaldi, rkhunter, sucrack, sudo, tcpd, vlan, vlock, yasat
+Description: security local host packages
+ This package will install the local host packages for Debian, for security
+ testing
+
+Package: security-host-nonfree
+Architecture: all
+Depends: ${misc:Depends}
+Recommends: nipper 
+Description: security nonfree local host packages
+ This package will install the nonfree local host packages for Debian, for
+ security testing
+
+Package: security-sniff
+Architecture: all
+Depends: ${misc:Depends}, dsniff, hlbr, hunt, nast, nepenthes, netsniff-ng, ngrep, snort, ssldump, tcpdump, ttysnoop, wireshark
+Description: security traffic sniffing packages
+ This package will install the traffic sniffing packages for Debian, for
+ security testing
+
+Package: security-tunnel
+Architecture: all
+Depends: ${misc:Depends}, 6tunnel, corkscrew, dns2tcp, httptunnel, ipsec-tools, miredo, miredo-server, openvpn, privoxy, ptunnel, racoon, stunnel4, tor, tsocks, udptunnel, vpnc
+Description: security traffic tunneling packages
+ This package will install the traffic tunneling packages for Debian, for
+ security testing
+
+Package: security-encrypt
+Architecture: all
+Depends: ${misc:Depends}, bkhive, crack, crack-md5, fcrackzip, gnupg, hydra, john, ngorca, ophcrack, pdfcrack, pyrit, samdump2, signing-party, sleuthkit, sslscan
+Recommends: ophcrack-tables, wamerican, wamerican-large, wamerican-small, wbritish, wbritish-large, wbritish-small 
+Description: security data encryption packages
+ This package will install the data encryption packages for Debian, for
+ security testing
+
+Package: security-fuzz
+Architecture: all
+Depends: ${misc:Depends}, bfbtester, bittwist, crashme, fusil, fuzz, hping3, mz, netsed, packeth, packit, python-hachoir-core, python-hachoir-metadata, python-hachoir-parser, python-hachoir-urwid, python-hachoir-wx, python-impacket, python-scapy, sendip, spikeproxy, vbindiff, vttest, yersinia
+Description: security fuzzing packages
+ This package will install the fuzzing packages for Debian, for security
+ testing
+
+Package: security-develop
+Architecture: all
+Depends: ${misc:Depends}, autoconf, automake, binutils, bokken, build-essential, c-cpp-reference, cppcheck, dehydra, dumpasn1, elfsh, elfutils, eresi, expect, ckport, flasm, flawfinder, gdb, hexcurse, latrace, ltrace, mingw32, mtasc, nasm, nemiver, patch, pdksh, perl, pscan, python, rats, ruby, scanmem, splint, strace, sun-java6-jre|java2-runtime, swfmill, tcl8.4, valgrind, vim
+Description: security tool and exploit development packages
+ This package will install the tool and exploit development packages for
+ Debian, for security testing
+
+Package: security-wardrive
+Architecture: all
+Depends: ${misc:Depends}, aircrack-ng, bluetooth, bluez-hcidump, bluez-utils, btscanner, hostapd, kismet, obexftp, wireless-tools, wpasupplicant
+Description: security bluetooth and wifi wardriving packages
+ This package will install the bluetooth and wifi wardriving packages for
+ Debian, for security testing
+
+Package: security-emulate
+Architecture: all
+Depends: ${misc:Depends}, hercules, qemu
+Description: security host emulation packages
+ This package will install the host emulation packages for Debian, for
+ security testing
+
+Package: security-misc
+Architecture: all
+Depends: ${misc:Depends}, geoip-bin, ipcalc, ipv6calc, upx-nrv
+Description: security miscellaneous packages
+ This package will install the miscellaneous packages for Debian, for
+ security testing
+
+Package: security-forensics
+Architecture: all
+Depends: ${misc:Depends}, dcfldd, extundelete, foremost
+Description: security forensics packages
+ This package will install the forensics packages for Debian, for
+ security testing
