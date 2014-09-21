@@ -1,3 +1,40 @@
+debian-sec (0.5.4) UNRELEASED; urgency=medium
+
+  * Added python-capstone
+  * Added security-mobile: abootimg, android-tools-adb, android-tools-fastboot, android-tools-fsutils, androidsdk-ddms, androidsdk-hierarchyviewer, androidsdk-traceview, androidsdk-uiautomatorviewer, google-android-build-tools-installer, google-android-sdk-docs-installer, mtp-tools, mtpfs
+  * Added ipmitool, upnp-inspector
+  * Added nfs-kernel-server
+  * Added inotify-tools
+  * Added bustle
+  * Added paperkey
+  * Added exabgp
+  * Added arduino, coccinelle, cgvg, python-capstone, seascope
+  * Added hackrf
+  * Added fatcat, ocrad
+
+ -- Tim Brown <timb@nth-dimension.org.uk>  Wed, 17 Sep 2014 09:42:00 +0100
+
+debian-sec (0.5.0) unstable; urgency=medium
+
+  * Skipped 0.4.0 as that was a trial run from MWE
+  * Added hydra, freerdp-x11, rusers, sipcrack, x11-utils, x11-apps
+  * Removed rdesktop
+  * removed openvas-client, openvas-scanner
+  * Moved ext3grep
+  * Added htop, iotop
+  * Removed ovaldi
+  * Removed hydra
+  * Added rarcrack
+  * Added snooper, vusb-analyzer
+  * Added bcov, corekeeper, exabgp, thc-ipv6, trinity, vbindiff, zzuf
+  * Removed bokken, dehydra
+  * Added cvs, etrace, gdb-multiarch, git, subversion
+  * Added pyrit, reaver, wifite, weplab
+  * Added bochs, dosbox, gns3, skyeye
+  * Added binwalk, u3-tool
+
+ -- Tim Brown <timb@nth-dimension.org.uk>  Wed, 10 May 2014 23:31:55 +0100
+
 debian-sec (0.3.0) unstable; urgency=low
 
   * Rebuilt from scratch
