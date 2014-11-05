@@ -5,7 +5,7 @@ debian-sec (0.5.5) unstable; urgency=medium
   * Cleaned up security-client-nonfree, security-server-nonfree
   * Fixed control headers
 
- -- Tim Brown <tmb@sarpedon.trusted.tmb>  Wed, 05 Nov 2014 14:43:32 +0000
+ -- Tim Brown <timb@nth-dimension.org.uk>  Wed, 05 Nov 2014 14:43:32 +0000
 
 debian-sec (0.5.4) unstable; urgency=medium
 
