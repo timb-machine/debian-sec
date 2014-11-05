@@ -1,4 +1,13 @@
-debian-sec (0.5.4) UNRELEASED; urgency=medium
+debian-sec (0.5.5) unstable; urgency=medium
+
+  * Added volatility, yara
+  * Added heartbleeder
+  * Cleaned up security-client-nonfree, security-server-nonfree
+  * Fixed control headers
+
+ -- Tim Brown <tmb@sarpedon.trusted.tmb>  Wed, 05 Nov 2014 14:43:32 +0000
+
+debian-sec (0.5.4) unstable; urgency=medium
 
   * Added python-capstone
   * Added security-mobile: abootimg, android-tools-adb, android-tools-fastboot, android-tools-fsutils, androidsdk-ddms, androidsdk-hierarchyviewer, androidsdk-traceview, androidsdk-uiautomatorviewer, google-android-build-tools-installer, google-android-sdk-docs-installer, mtp-tools, mtpfs

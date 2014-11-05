@@ -24,8 +24,9 @@ Description: security protocol specific client packages
 
 Package: security-client-nonfree
 Architecture: all
+Section: non-free/admin
 Depends: ${misc:Depends}
-Recommends: burpsuite, oracle-xe-client
+Recommends: 
 Description: security nonfree protocol specific client packages
  This package will install the nonfree protocol specific client packages
  for Debian, for security testing.
@@ -39,9 +40,10 @@ Description: security protocol specific server packages
  for security testing
 
 Package: security-server-nonfree
+Section: non-free/admin
 Architecture: all
 Depends: ${misc:Depends}
-Recommends: oracle-xe
+Recommends: 
 Description: security nonfree protocol specific server packages
  This package will install the nonfree protocol specific server packages
  for Debian, for security testing
@@ -84,7 +86,7 @@ Description: security traffic tunneling packages
 
 Package: security-encrypt
 Architecture: all
-Depends: ${misc:Depends}, bkhive, crack, crack-md5, fcrackzip, gnupg, john, ngorca, ophcrack, paperkey, pdfcrack, pyrit, rarcrack, samdump2, signing-party, sleuthkit, sslscan
+Depends: ${misc:Depends}, bkhive, crack, crack-md5, fcrackzip, gnupg, heartbleeder, john, ngorca, ophcrack, paperkey, pdfcrack, pyrit, rarcrack, samdump2, signing-party, sleuthkit, sslscan
 Recommends: ophcrack-tables, wamerican, wamerican-large, wamerican-small, wbritish, wbritish-large, wbritish-small 
 Description: security data encryption packages
  This package will install the data encryption packages for Debian, for
@@ -127,7 +129,7 @@ Description: security miscellaneous packages
 
 Package: security-forensics
 Architecture: all
-Depends: ${misc:Depends}, binwalk, dcfldd, ext3grep, extundelete, fatcat, foremost, ocrad, u3-tool
+Depends: ${misc:Depends}, binwalk, dcfldd, ext3grep, extundelete, fatcat, foremost, ocrad, u3-tool, volatility, yara
 Description: security forensics packages
  This package will install the forensics packages for Debian, for
  security testing
