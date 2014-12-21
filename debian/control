@@ -136,7 +136,7 @@ Description: security forensics packages
 
 Package: security-mobile
 Architecture: all
-Depends:, ${misc:Depends}, abootimg, android-tools-adb, android-tools-fastboot, android-tools-fsutils, androidsdk-ddms, androidsdk-hierarchyviewer, androidsdk-traceview, androidsdk-uiautomatorviewer, crossbuild-essential-armhf, google-android-build-tools-installer, google-android-sdk-docs-installer, mtp-tools, mtpfs
+Depends:, ${misc:Depends}, abootimg, android-tools-adb, android-tools-fastboot, android-tools-fsutils, androidsdk-ddms, androidsdk-hierarchyviewer, androidsdk-traceview, androidsdk-uiautomatorviewer, crossbuild-essential-armhf, google-android-build-tools-installer, google-android-sdk-docs-installer, libusbmuxd-tools, mtp-tools, mtpfs
 Description: security mobile packages
  This package will install the mobile packages for Debian, for
  security testing
