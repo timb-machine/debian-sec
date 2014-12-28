@@ -5,8 +5,8 @@ Maintainer: Tim Brown <timb@nth-dimension.org.uk>
 Build-Depends: debhelper (>= 8.0.0)
 Standards-Version: 3.9.3
 Homepage: http://www.nth-dimension.org.uk/
-Vcs-Cvs: :pserver:anonymous@cvs.nth-dimension.org.uk:/var/lib/cvsd debian-sec
-Vcs-Browser: http://projects.nth-dimension.org.uk/timeline?px=debian-sec
+Vcs-Svn: https://projects.nth-dimension.org.uk/subversion/debian-sec/trunk
+Vcs-Browser: https://projects.nth-dimension.org.uk/projects/debian-sec/activity
 
 Package: debian-sec
 Architecture: all

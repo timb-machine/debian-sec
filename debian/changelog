@@ -1,3 +1,9 @@
+debian-sec (0.5.8) UNRELEASED; urgency=medium
+
+  * Updated Vcs-* control headers
+
+ -- Tim Brown <timb@nth-dimension.org.uk>  Sun, 28 Dec 2014 00:57:56 +0000
+
 debian-sec (0.5.7) unstable; urgency=medium
 
   * Added libusbmuxd-tools
