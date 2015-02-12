@@ -101,7 +101,7 @@ Description: security fuzzing packages
 
 Package: security-develop
 Architecture: all
-Depends: ${misc:Depends}, arduino, autoconf, automake, binutils, build-essential, c-cpp-reference, coccinelle, cgvg, cppcheck, cvs, dumpasn1, elfsh, elfutils, eresi, etrace, expect, ckport, flasm, flawfinder, gdb-multiarch, git, hexcurse, latrace, ltrace, mingw32, mtasc, nasm, nemiver, patch, pdksh, perl, pscan, python, python-capstone, rats, ruby, seascope, scanmem, strace, subversion, sun-java6-jre|java2-runtime, swfmill, tcl8.6, valgrind, vim
+Depends: ${misc:Depends}, arduino, autoconf, automake, binutils, build-essential, c-cpp-reference, coccinelle, cgvg, cppcheck, cvs, dumpasn1, elfsh, elfutils, eresi, etrace, expect, ckport, flasm, flawfinder, gdb-multiarch, git, hexcurse, latrace, ltrace, mingw32, mtasc, nasm, nemiver, patch, pdksh, perl, pscan, python, python-capstone, rats, ruby, seascope, scanmem, shellcheck, strace, subversion, sun-java6-jre|java2-runtime, swfmill, tcl8.6, valgrind, vim
 Description: security tool and exploit development packages
  This package will install the tool and exploit development packages for
  Debian, for security testing
