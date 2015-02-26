@@ -94,7 +94,7 @@ Description: security data encryption packages
 
 Package: security-fuzz
 Architecture: all
-Depends: ${misc:Depends}, bcov, bfbtester, bittwist, corekeeper, crashme, exabgp, fusil, fuzz, goldeneye, hping3, mz, netsed, packeth, packit, python-hachoir-core, python-hachoir-metadata, python-hachoir-parser, python-hachoir-urwid, python-hachoir-wx, python-impacket, python-scapy, sendip, spikeproxy, thc-ipv6, trinity, vbindiff, vttest, yersinia, zzuf
+Depends: ${misc:Depends}, afl, bcov, bfbtester, bittwist, corekeeper, crashme, exabgp, fusil, fuzz, goldeneye, hping3, mz, netsed, packeth, packit, python-hachoir-core, python-hachoir-metadata, python-hachoir-parser, python-hachoir-urwid, python-hachoir-wx, python-impacket, python-scapy, sendip, spikeproxy, thc-ipv6, trinity, vbindiff, vttest, yersinia, zzuf
 Description: security fuzzing packages
  This package will install the fuzzing packages for Debian, for security
  testing
