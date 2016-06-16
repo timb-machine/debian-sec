@@ -1,10 +1,19 @@
 debian-sec (0.5.8) UNRELEASED; urgency=medium
 
   * Updated Vcs-* control headers
-  * Added shellcheck
+  * Added shellcheck, radare2, lldb, monodevelop
   * Added afl
+  * Deprecated security-client-nonfree, security-server-nonfree
+  * Removed adtool, inguma, paros, traceroute-nanog
+  * Removed nepenthes
+  * Removed elfsh
+  * Removed upx-nrv
+  * Added creepy
+  * Added libesedb-utils, python-libesedb, aeskeyfind, rsakeyfind
+  * Added hamradio-sdr, hamradio-datamodes, hamradio-digitalvoice,
+    hamradio-morse
 
- -- Tim Brown <tmb@sarpedon.trusted.tmb>  Thu, 26 Feb 2015 17:14:21 +0000
+ -- Tim Brown <timb@nth-dimension.org.uk>  Thu, 16 Jun 2016 22:11:17 +0100
 
 debian-sec (0.5.7) unstable; urgency=medium
 
