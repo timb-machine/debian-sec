@@ -1,19 +1,29 @@
-debian-sec (0.5.8) UNRELEASED; urgency=medium
+debian-sec (0.5.8) pcsl-rolling; urgency=medium
 
   * Updated Vcs-* control headers
   * Added shellcheck, radare2, lldb, monodevelop
   * Added afl
   * Deprecated security-client-nonfree, security-server-nonfree
-  * Removed adtool, inguma, paros, traceroute-nanog
-  * Removed nepenthes
-  * Removed elfsh
+  * Removed adtool, inguma, netcat6, paros, radiusclient1, ratproxy, scli, traceroute-nanog, upnp-inspector
+  * Removed nipper
+  * Removed nepenthes, snooper
+  * Removed crack, crack-md5, ngorca, ophcrack-tables
+  * Removed c-cpp-reference, elfsh, elf-utils, eresi, etrace, gdb-multiarch, mingw32, rats, sun-java6-jre
   * Removed upx-nrv
   * Added creepy
   * Added libesedb-utils, python-libesedb, aeskeyfind, rsakeyfind
   * Added hamradio-sdr, hamradio-datamodes, hamradio-digitalvoice,
     hamradio-morse
+  * Removed bcov, spikeproxy
+  * Removed bluez-utils
+  * Removed android-tools-fsutils, crossbuild-essential-armhf
+  * Downgraded security-server to recommends (to support containers)
+  * Downgraded security-mobile to recommends (as currently broken)
+  * Changed php5* to php
+  * Changed java2-runtime to default-jre
+  * Changed pdksh to mksh
 
- -- Tim Brown <timb@nth-dimension.org.uk>  Thu, 16 Jun 2016 22:11:17 +0100
+ -- Tim Brown <timb@nth-dimension.org.uk>  Tue, 03 Jan 2017 22:58:18 +0000
 
 debian-sec (0.5.7) unstable; urgency=medium
 
@@ -60,7 +70,7 @@ debian-sec (0.5.0) unstable; urgency=medium
   * Skipped 0.4.0 as that was a trial run from MWE
   * Added hydra, freerdp-x11, rusers, sipcrack, x11-utils, x11-apps
   * Removed rdesktop
-  * removed openvas-client, openvas-scanner
+  * Removed openvas-client, openvas-scanner
   * Moved ext3grep
   * Added htop, iotop
   * Removed ovaldi

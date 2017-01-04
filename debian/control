@@ -10,14 +10,14 @@ Vcs-Browser: https://projects.nth-dimension.org.uk/projects/debian-sec/activity
 
 Package: debian-sec
 Architecture: all
-Depends: ${misc:Depends}, security-client, security-develop, security-emulate, security-encrypt, security-enumerate, security-forensics, security-fuzz, security-host, security-misc, security-server, security-sniff, security-tunnel, security-wardrive, security-mobile
-Recommends: security-client-oldstable, security-wardrive-oldstable, security-host-nonfree
+Depends: ${misc:Depends}, security-client, security-develop, security-emulate, security-encrypt, security-enumerate, security-forensics, security-fuzz, security-host, security-misc, security-sniff, security-tunnel, security-wardrive
+Recommends: security-client-oldstable, security-wardrive-oldstable, security-host-nonfree, security-mobile, security-noncontainer
 Description: security packages
  This package will install the packages for Debian, for security testing
 
 Package: security-client
 Architecture: all
-Depends: ${misc:Depends}, arping, arp-scan, bind9-host, cadaver, cdpr, curl, ipmitool, isc-dhcp-client, dnsutils, dnswalk, finger, fpdns, ftp-ssl, hydra, icmpush, ike-scan, jxplorer, ldap-utils, lft, lynx, minicom, miniupnpc, mtr, mysql-client, nbtscan, ncftp, netcat6, nfs-common, nikto, nis, ntpdate, openssh-client, openssl, ratproxy, freerdp-x11, rsh-client, rusers, rwho, s3270, scanssh, scli, siege, skipfish, smbclient, smb-nat, snmp, socat, sipcrack, sqlite3, sqlmap, sqsh, ssmping, tcptraceroute, telnet, tftp, upnp-inspector, upnp-router-control, w3af, w3m, wapiti, wget, whois, x3270, xnest, xtv, x11-utils, x11-apps
+Depends: ${misc:Depends}, arping, arp-scan, bind9-host, cadaver, cdpr, curl, ipmitool, isc-dhcp-client, dnsutils, dnswalk, finger, fpdns, ftp-ssl, hydra, icmpush, ike-scan, jxplorer, ldap-utils, lft, lynx, minicom, miniupnpc, mtr, mysql-client, nbtscan, ncftp, nfs-common, nikto, nis, ntpdate, openssh-client, openssl, freerdp-x11, rsh-client, rusers, rwho, s3270, scanssh, siege, skipfish, smbclient, smb-nat, snmp, socat, sipcrack, sqlite3, sqlmap, sqsh, ssmping, tcptraceroute, telnet, tftp, upnp-router-control, w3af, w3m, wapiti, wget, whois, x3270, xnest, xtv, x11-utils, x11-apps
 Description: security protocol specific client packages
  This package will install the protocol specific client packages for Debian,
  for security testing
@@ -26,7 +26,7 @@ Package: security-client-oldstable
 Architecture: all
 Section: non-free/admin
 Depends: ${misc:Depends}
-Recommends: radiusclient1
+Recommends: 
 Description: security oldstable protocol specific client packages
  This package will install the oldstable protocol specific client packages
  for Debian, for security testing.
@@ -34,7 +34,7 @@ Description: security oldstable protocol specific client packages
 Package: security-server
 Architecture: all
 Depends: ${misc:Depends}, apache2, dante-server, dnsmasq, mysql-server, nfs-kernel-server, openssh-server, rsh-server, rwhod, samba, tftpd, vsftpd
-Recommends: php5, php5-cli, php-db, phpmyadmin, php-pear
+Recommends: php, php-cli, php-db, phpmyadmin, php-pear
 Description: security protocol specific server packages
  This package will install the protocol specific server packages for Debian,
  for security testing
@@ -56,14 +56,14 @@ Description: security local host packages
 Package: security-host-nonfree
 Architecture: all
 Depends: ${misc:Depends}
-Recommends: nipper 
+Recommends: 
 Description: security nonfree local host packages
  This package will install the nonfree local host packages for Debian, for
  security testing
 
 Package: security-sniff
 Architecture: all
-Depends: ${misc:Depends}, bustle, dsniff, hunt, nast, netsniff-ng, ngrep, snooper, snort, ssldump, tcpdump, ttysnoop, vusb-analyzer, wireshark
+Depends: ${misc:Depends}, bustle, dsniff, hunt, nast, netsniff-ng, ngrep, snort, ssldump, tcpdump, ttysnoop, vusb-analyzer, wireshark
 Description: security traffic sniffing packages
  This package will install the traffic sniffing packages for Debian, for
  security testing
@@ -77,36 +77,36 @@ Description: security traffic tunneling packages
 
 Package: security-encrypt
 Architecture: all
-Depends: ${misc:Depends}, aeskeyfind, bkhive, crack, crack-md5, fcrackzip, gnupg, heartbleeder, john, libesedb-utils, ngorca, ophcrack, paperkey, pdfcrack, pyrit, python-libesedb, rarcrack, rsakeyfind, samdump2, signing-party, sleuthkit, sslscan
-Recommends: ophcrack-tables, wamerican, wamerican-large, wamerican-small, wbritish, wbritish-large, wbritish-small 
+Depends: ${misc:Depends}, aeskeyfind, bkhive, fcrackzip, gnupg, heartbleeder, john, libesedb-utils, ophcrack, paperkey, pdfcrack, pyrit, python-libesedb, rarcrack, rsakeyfind, samdump2, signing-party, sleuthkit, sslscan
+Recommends: wamerican, wamerican-large, wamerican-small, wbritish, wbritish-large, wbritish-small 
 Description: security data encryption packages
  This package will install the data encryption packages for Debian, for
  security testing
 
 Package: security-fuzz
 Architecture: all
-Depends: ${misc:Depends}, afl, bcov, bfbtester, bittwist, corekeeper, crashme, exabgp, fusil, fuzz, goldeneye, hping3, mz, netsed, packeth, packit, python-hachoir-core, python-hachoir-metadata, python-hachoir-parser, python-hachoir-urwid, python-hachoir-wx, python-impacket, python-scapy, sendip, spikeproxy, thc-ipv6, trinity, vbindiff, vttest, yersinia, zzuf
+Depends: ${misc:Depends}, afl, bfbtester, bittwist, corekeeper, crashme, exabgp, fusil, fuzz, goldeneye, hping3, mz, netsed, packeth, packit, python-hachoir-core, python-hachoir-metadata, python-hachoir-parser, python-hachoir-urwid, python-hachoir-wx, python-impacket, python-scapy, sendip, thc-ipv6, trinity, vbindiff, vttest, yersinia, zzuf
 Description: security fuzzing packages
  This package will install the fuzzing packages for Debian, for security
  testing
 
 Package: security-develop
 Architecture: all
-Depends: ${misc:Depends}, arduino, autoconf, automake, binutils, build-essential, c-cpp-reference, coccinelle, cgvg, cppcheck, cvs, dumpasn1, elfutils, eresi, etrace, expect, ckport, flasm, flawfinder, gdb-multiarch, git, hexcurse, latrace, lldb, ltrace, mingw32, monodevelop, mtasc, nasm, nemiver, patch, pdksh, perl, pscan, python, python-capstone, radare2, rats, ruby, seascope, scanmem, shellcheck, strace, subversion, sun-java6-jre|java2-runtime, swfmill, tcl8.6, valgrind, vim
+Depends: ${misc:Depends}, arduino, autoconf, automake, binutils, build-essential, coccinelle, cgvg, cppcheck, cvs, dumpasn1, expect, ckport, flasm, flawfinder, git, hexcurse, latrace, lldb, ltrace, mksh, monodevelop, mtasc, nasm, nemiver, patch, perl, pscan, python, python-capstone, radare2, ruby, seascope, scanmem, shellcheck, strace, subversion, default-jre, swfmill, tcl8.6, valgrind, vim
 Description: security tool and exploit development packages
  This package will install the tool and exploit development packages for
  Debian, for security testing
 
 Package: security-wardrive
 Architecture: all
-Depends: ${misc:Depends}, aircrack-ng, bluetooth, bluez-hcidump, bluez-utils, btscanner, hackrf, hamradio-sdr, hamradio-datamodes, hamradio-digitalvoice, hamradio-morse, hostapd, kismet, obexftp, pyrit, reaver, wifite, weplab, wireless-tools, wpasupplicant
+Depends: ${misc:Depends}, aircrack-ng, bluetooth, bluez-hcidump, btscanner, hackrf, hamradio-sdr, hamradio-datamodes, hamradio-digitalvoice, hamradio-morse, hostapd, kismet, obexftp, pyrit, reaver, wifite, weplab, wireless-tools, wpasupplicant
 Description: security bluetooth and wifi wardriving packages
  This package will install the bluetooth and wifi wardriving packages
  for Debian, for security testing
 
 Package: security-wardrive-oldstable
 Architecture: all
-Depends: ${misc:Depends}, bluez-utils
+Depends: ${misc:Depends}
 Description: security oldstable bluetooth and wifi wardriving packages
  This package will install the oldstable bluetooth and wifi wardriving
  packages for Debian, for security testing
@@ -134,7 +134,14 @@ Description: security forensics packages
 
 Package: security-mobile
 Architecture: all
-Depends: ${misc:Depends}, abootimg, android-tools-adb, android-tools-fastboot, android-tools-fsutils, androidsdk-ddms, androidsdk-hierarchyviewer, androidsdk-traceview, androidsdk-uiautomatorviewer, crossbuild-essential-armhf, google-android-build-tools-installer, google-android-sdk-docs-installer, libusbmuxd-tools, mtp-tools, mtpfs
+Depends: ${misc:Depends}, abootimg, android-tools-adb, android-tools-fastboot, androidsdk-ddms, androidsdk-hierarchyviewer, androidsdk-traceview, androidsdk-uiautomatorviewer, google-android-build-tools-installer, google-android-sdk-docs-installer, libusbmuxd-tools, mtp-tools, mtpfs
 Description: security mobile packages
  This package will install the mobile packages for Debian, for
+ security testing
+
+Package: security-noncontainer
+Architecture: all
+Depends: ${misc:Depends}, corekeeper, auditd, security-server
+Description: security noncontainer packages
+ This package will install the noncontainer packages for Debian, for
  security testing
